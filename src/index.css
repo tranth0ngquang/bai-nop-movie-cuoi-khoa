@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logoZaha path {
+    fill: rgb(133, 133, 133);
+}
+
+.logoZaha:hover path {
+    fill: white;
+}
+
+/* header nav footer------------------------------ */
+.NavFooter_text_a {
+    @apply text-stone-500 hover:text-white;
+}
+
+.header_nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+/* video------------------------------ */
+.videoHome_play-pause,
+.videoHome_volume {
+    @apply text-white w-8 h-8 rounded-full bg-transparent hover:bg-black/80 border border-white/50 hover:border-white;
+}
+
+/* ẩn hiện to nhỏ chữ------------------------------ */
+.show_text_6s {
+    display: block;
+    animation: fadeIn 6s ease-in-out forwards;
+    /* Tạo hiệu ứng fadeIn */
+}
+
+@keyframes fadeIn {
+    0% {
+        display: block;
+        opacity: 1;
+        /* Bắt đầu với độ mờ 0 */
+    }
+
+    50% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+        /* Kết thúc với độ mờ 1 (hiện lên) */
+    }
+}
+
+/* Các nút bấm------------------------------ */
+/* Nút bấm đen trắng mua vé, xem chi tiết------------------------------ */
+.btn_trang {
+    @apply font-medium rounded-lg px-10 py-3 me-2 mb-2 border focus:outline-none text-black bg-white/80 border-stone-300 hover:bg-white focus:ring-1 hover:border-black/80 focus:ring-black;
+}
+
+.btn_den {
+    @apply font-medium rounded-lg px-10 py-3 me-2 mb-2 border focus:outline-none text-white bg-black/80 border-stone-600 hover:bg-black focus:ring-1 hover:border-white/80 focus:ring-white;
+}
+
+.model_img {
+    overflow: hidden;
+}
+
+.model_img img {
+    transform: scale(1);
+    transition: all 0.5s;
+    object-fit: cover;
+}
+
+.model_box:hover .model_img img {
+    transform: scale(1.3);
+}
+
+.model_box {
+    overflow: hidden;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.model_box:hover {
+    transform: scale(1.12);
+}
+
+.cardMovie_none {
+    display: none;
+}
+
+.model_box:hover .cardMovie_none {
+    display: block;
+}
+
+.model_box:hover .cardMovie_block {
+    display: none;
+}
+
+/* copy thêm------------------------------ */
+
+/* copy thêm------------------------------ */
+
+/* copy thêm------------------------------ */
+
+/* copy thêm------------------------------ */
+
+/* Login------------------------------ */
+.loginMovie_input {
+    @apply block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 appearance-none
+    text-white border-stone-600 focus:outline-none focus:ring-0 focus:border-white;
+}
+.loginMovie_label {
+    @apply peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4
+    peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
+    text-stone-400 peer-focus:text-white;
+}
+
+.lichChieuPhim {
+    @apply p-4 text-sm font-medium border focus:z-10 focus:ring-1 bg-stone-900 border-stone-700 text-stone-400 hover:text-white hover:bg-black focus:ring-white focus:text-black focus:bg-white focus:border-white;
+}
+
+/* loại Ghế------------------------------ */
+
+.seat {
+    cursor: pointer;
+    @apply w-6 h-6 sm:w-7 sm:h-7 md:w-9 md:h-9 lg:w-10 lg:h-10
+    border border-white/80 rounded-lg text-center m-0.5 sm:m-1 lg:m-1.5;
+}
+
+.seatL1 {
+    @apply bg-yellow-600;
+}
+.seatL2 {
+    @apply bg-stone-800;
+}
+.seatSelect {
+    @apply bg-red-600;
+}
+.seatReser {
+    @apply bg-black text-stone-600 border-white/40;
+}
+
+/* --------------- */
+
+.seatSelected {
+    background-color: red;
+}
+
+.Toastify__toast-container--top-center {
+    top: 40% !important;
+}
+
+.custom-hover-bg-red-200:hover {
+    background-color: rgb(251 213 213) !important;
+}
+
+.custom-hover-green:hover {
+    background-color: rgb(187 247 208) !important;
+}
