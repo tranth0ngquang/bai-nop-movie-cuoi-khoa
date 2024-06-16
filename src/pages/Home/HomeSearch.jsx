@@ -9,7 +9,7 @@ export default function HomeSearch() {
       >
         PHIM ĐANG CHIẾU
       </h2>
-      <div className="flex">
+      {/* <div className="flex">
         <label
           htmlFor="search-dropdown"
           className="mb-2 text-sm font-medium sr-only text-white"
@@ -45,7 +45,7 @@ export default function HomeSearch() {
             <span className="sr-only">Search</span>
           </button>
         </div>
-      </div>
+      </div> */}
     </form>
   );
 }
