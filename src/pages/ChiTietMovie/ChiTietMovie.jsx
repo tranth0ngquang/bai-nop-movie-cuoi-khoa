@@ -162,7 +162,7 @@ export default function ChiTietMovie() {
                   type="button"
                   className="btn_trang text-xl"
                 >
-                  <a href="#cacBuocDatVe">Mua ve ngay</a>
+                  <a href="#cacBuocDatVe">Mua vé ngay</a>
                 </button>
               </div>
             </div>

@@ -55,7 +55,7 @@ export default function LoginMovie() {
   return (
     <div>
       <section
-        className="bg-cover bg-no-repeat bg-[url('https://www.usatoday.com/gcdn/-mm-/83e081eae80cd2848af52df6da1060d621468f19/c=0-111-2120-1303/local/-/media/2021/02/04/USATODAY/usatsports/red-movie-theater-seats.jpg?width=2120&height=1192&fit=crop&format=pjpg&auto=webp')] bg-stone-700 bg-blend-multiply"
+        className="bg-cover bg-no-repeat bg-[url('https://idulich.vn/wp-content/uploads/2023/07/ma-1621227358.jpg')] bg-stone-700 bg-blend-multiply"
         style={{ height: 650 }}
       >
         <div className="mx-auto max-w-screen-xl px-4 py-28 lg:py-36">

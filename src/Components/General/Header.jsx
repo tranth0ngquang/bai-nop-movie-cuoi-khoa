@@ -50,7 +50,7 @@ export default function Header() {
   };
 
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid rounded className="bg-black/90 dark:bg-black/90 text-stone-500 px-2 py-2.5 dark:border-gray-700 sm:px-4 rounded-none rounded-b-lg fixed z-50 w-full">
       <NavLink to="/">
         <LogoZahaSvg />
       </NavLink>
@@ -82,10 +82,10 @@ export default function Header() {
           </Dropdown>
         ) : (
           <Button.Group>
-            <Button color="gray" onClick={() => navigate("/signup")}>
+            <Button className="border border-transparent bg-stone-900 dark:bg-stone-900 text-white focus:ring-stone-300 dark:focus:ring-stone-300 enabled:hover:bg-stone-700 dark:enabled:hover:bg-stone-700 focus:ring-1" onClick={() => navigate("/signup")}>
               Đăng ký
             </Button>
-            <Button color="gray" onClick={() => navigate("/login")}>
+            <Button className="border border-transparent bg-stone-900 dark:bg-stone-900 text-white focus:ring-stone-300 dark:focus:ring-stone-300 enabled:hover:bg-stone-700 dark:enabled:hover:bg-stone-700 focus:ring-1" onClick={() => navigate("/login")}>
               Đăng nhập
             </Button>
           </Button.Group>
@@ -94,11 +94,11 @@ export default function Header() {
       </div>
 
       <Navbar.Collapse>
-        <NavLink to="/home">Trang chủ</NavLink>
-        <NavLink to="/home#phimDangChieu">Lịch chiếu</NavLink>
-        <NavLink to="/home#phimSapChieu">Phim sắp chiếu</NavLink>
-        <NavLink to="/home#tinTuc">Tin tức</NavLink>
-        {isLogin && isAdmin && <NavLink to="/admin">Quản trị</NavLink>}
+        <NavLink to="/home" className="hover:text-white focus:text-white p-2 md:p-0 text-center hover:bg-stone-800 md:hover:bg-transparent">Trang chủ</NavLink>
+        <NavLink to="/home#phimDangChieu"  className="hover:text-white focus:text-white p-2 md:p-0 text-center hover:bg-stone-800 md:hover:bg-transparent">Lịch chiếu</NavLink>
+        <NavLink to="/home#phimSapChieu" className="hover:text-white focus:text-white p-2 md:p-0 text-center hover:bg-stone-800 md:hover:bg-transparent">Phim sắp chiếu</NavLink>
+        <NavLink to="/home#tinTuc" className="hover:text-white focus:text-white p-2 md:p-0 text-center hover:bg-stone-800 md:hover:bg-transparent">Tin tức</NavLink>
+        {isLogin && isAdmin && <NavLink to="/admin"  className="hover:text-white focus:text-white p-2 md:p-0 text-center hover:bg-stone-800 md:hover:bg-transparent">Quản trị</NavLink>}
       </Navbar.Collapse>
     </Navbar>
   );

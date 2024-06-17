@@ -35,7 +35,10 @@ export default function HomeCardMovieAPI() {
           <div className="" key={item.maPhim} id="">
             <div className="max-w-sm border rounded-lg shadow bg-stone-900 border-stone-700 text-center hover:bg-black hover:border-stone-500 model_box">
               <div className="model_img relative h-60">
-                <a href="/">
+                <a href=""
+                  onClick={() => {
+                    navigate(`/chitietmovie/${item.maPhim}`);
+                  }}>
                   <img className="" src={item.hinhAnh} alt="" />
                 </a>
                 <div className="absolute bottom-2 z-10 cardMovie_none">
@@ -87,19 +90,19 @@ export default function HomeCardMovieAPI() {
   };
 
   return (
-    <div className="mx-auto w-full max-w-screen-xl p-4 py-8 lg:py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-6">
-      <>{renderCardMoiveAPI()}</>
-
-      <>
-        <div className="flex justify-center	w-full text-white">
-          <button onClick={handleBack} className="mr-5 text-black">
-            <i className="fa fa-arrow-left"></i>
-          </button>
-          <button onClick={handleNext} className="text-black">
-            <i className="fa fa-arrow-right"></i>
-          </button>
-        </div>
-      </>
+    <div>
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-8 lg:py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-6">
+        <>{renderCardMoiveAPI()}</>
+      </div>
+      <div className="flex justify-center	w-full">
+        <button onClick={handleBack} className="mr-5">
+          <i className="fa fa-arrow-left border border-stone-500 p-3 rounded-full text-stone-500 hover:text-white hover:border-white"></i>
+        </button>
+        <button onClick={handleNext} className="">
+          <i className="fa fa-arrow-right border border-stone-500 p-3 rounded-full text-stone-500 hover:text-white hover:border-white"></i>
+        </button>
+      </div>
     </div>
+
   );
 }

@@ -5,9 +5,10 @@ import HomeCardMovieAPI from "./HomeCardMovieAPI";
 import HomeImg from "./HomeImg";
 import HomeCardMovie from "./HomeCardMovie";
 import { HomeCarousel } from "./HomeCarousel";
+
 const ExampleComponent = () => {
   return (
-    <div>
+    <div className="relative">
       <HomeCarousel />
       <HomeSearch />
       <HomeCardMovieAPI />
